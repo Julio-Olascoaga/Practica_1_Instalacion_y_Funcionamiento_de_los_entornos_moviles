@@ -51,6 +51,8 @@ Durante el proceso de instalación surgieron dos complicaciones principales con 
 
 ### Emulador "Hello Android"
 <img width="1917" height="1137" alt="Captura de pantalla 2026-09-03 074542" src="https://github.com/user-attachments/assets/eb6ada34-0fc2-48cd-b36c-72be0c2c49b0" />
+
+## 5. Tabla de versiones de herramientas
 | Herramienta | Versión Instalada | Sistema Operativo |
 | :--- | :--- | :--- |
 | **Sistema Operativo Base** | Windows 11 (25H2) | N/A |
@@ -61,3 +63,12 @@ Durante el proceso de instalación surgieron dos complicaciones principales con 
 | **Android SDK** | 37.0.0 | Windows 11 |
 | **Node.js** | 24.20.0 | Windows 11 |
 | **Docker** | 29.7.2 | Windows 11 |
+
+## 6. Versión 1: Android nativo con Views (XML)
+<img width="1917" height="1138" alt="Captura de pantalla 2026-09-03 104008" src="https://github.com/user-attachments/assets/87b45eaa-ad54-47aa-a431-3a5811274858" />
+
+## 7. Versión 2: Android nativo con Jetpack Compose
+<img width="1732" height="1081" alt="image" src="https://github.com/user-attachments/assets/7e48263a-397b-48ef-9980-47f86bb9a54a" />
+
+## 8. Versión 3: Flutter
+<img width="1917" height="1135" alt="image" src="https://github.com/user-attachments/assets/a31cb269-cc66-406d-8b8f-e91f4d365324" />
