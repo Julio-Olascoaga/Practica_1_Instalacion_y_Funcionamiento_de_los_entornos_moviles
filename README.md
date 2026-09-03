@@ -65,10 +65,44 @@ Durante el proceso de instalación surgieron dos complicaciones principales con 
 | **Docker** | 29.7.2 | Windows 11 |
 
 ## 6. Versión 1: Android nativo con Views (XML)
+Aplicación nativa basada en un esquema tradicional de separación de responsabilidades, utilizando un `ConstraintLayout` y múltiples componentes `TextView` para estructurar la interfaz visual.
+### Ejecución de la Versión 1 (XML + Kotlin)
+1. Abrir Android Studio y seleccionar **New Project** -> **Empty Views Activity**.
+2. Asignar el nombre del proyecto, verificar que el lenguaje seleccionado sea **Kotlin** y hacer clic en **Finish**.
+3. Navegar al archivo de diseño ubicado en `app/src/main/res/layout/activity_main.xml`.
+4. Cambiar a la vista de código (**Code**) y estructurar los elementos visuales utilizando un `ConstraintLayout` con los `TextView` requeridos.
+5. Seleccionar el emulador configurado en la barra superior y hacer clic en el botón **Run 'app'** (ícono de reproducción verde).
 <img width="1917" height="1138" alt="Captura de pantalla 2026-09-03 104008" src="https://github.com/user-attachments/assets/87b45eaa-ad54-47aa-a431-3a5811274858" />
 
 ## 7. Versión 2: Android nativo con Jetpack Compose
+Aplicación nativa basada en un paradigma declarativo, empleando funciones `@Composable` y modificadores de estilo directamente en código Kotlin para renderizar los elementos visuales.
+### Ejecución de la Versión 2 (Jetpack Compose)
+1. En Android Studio, crear un nuevo proyecto seleccionando **File > New > New Project** -> **Empty Activity** (con el logotipo de Jetpack Compose).
+2. Abrir el archivo `app/src/main/java/.../MainActivity.kt`.
+3. Implementar una función con la anotación `@Composable` que organice los componentes `Text` dentro de un contenedor `Column`, aplicando modificadores de diseño (`padding`, tipografía y color).
+4. Validar el diseño en tiempo de diseño utilizando la anotación `@Preview`.
+5. Ejecutar la aplicación en el emulador mediante el botón **Run** del IDE.
 <img width="1732" height="1081" alt="image" src="https://github.com/user-attachments/assets/7e48263a-397b-48ef-9980-47f86bb9a54a" />
 
 ## 8. Versión 3: Flutter
+Aplicación multiplataforma estructurada mediante un árbol de widgets nativos (`MaterialApp`, `Scaffold`, `Column` y `Text`) ejecutándose sobre el motor de renderizado de Flutter.
+### Ejecución de la Versión 3 (Flutter)
+1. Abrir la terminal del sistema (o la integrada en Android Studio) y generar el proyecto ejecutando:
+   ```bash
+   flutter create hola_mundo_flutter
+   cd hola_mundo_flutter
+2. Abrir el archivo lib/main.dart en un editor de código, eliminar el contenido predeterminado e implementar el árbol de widgets utilizando MaterialApp, Scaffold, Column y Text.
+3. Asegurar que el emulador de Android se encuentre activo y en ejecución.
+4. Compilar y desplegar la aplicación ejecutando en la terminal: flutter run
 <img width="1917" height="1135" alt="image" src="https://github.com/user-attachments/assets/a31cb269-cc66-406d-8b8f-e91f4d365324" />
+
+## 8. Conclusiones y hallazgos
+El desarrollo de esta práctica permitió contrastar de manera directa tres enfoques tecnológicos fundamentales en la ingeniería de software móvil actual.
+
+En primer lugar, el modelo tradicional de Android Views con XML evidencia el paradigma imperativo clásico, donde el código de la interfaz gráfica y la lógica de control se encuentran estrictamente desacoplados en archivos separados. Si bien ofrece un control preciso sobre la jerarquía de vistas mediante contenedores como ConstraintLayout, su gestión resulta más verbosa para interfaces sencillas.
+
+Por otro lado, Jetpack Compose representa un cambio radical hacia el paradigma declarativo en el ecosistema nativo de Android. Al prescindir de los archivos XML y concentrar la estructura visual en funciones de orden superior (@Composable), se reduce drásticamente la cantidad de código necesario y se simplifica la aplicación de estilos mediante modificadores encadenados, mejorando la legibilidad y la productividad del desarrollador.
+
+Finalmente, el enfoque multiplataforma con Flutter demuestra la versatilidad de utilizar un único código fuente basado en un árbol de widgets homogéneo para desplegar aplicaciones consistentes. A diferencia del desarrollo nativo, la abstracción que provee Dart desacopla la interfaz del sistema operativo subyacente, aunque esto introduce una mayor complejidad inicial en la configuración del entorno de compilación, gestión de dependencias nativas (como el SDK y el NDK) y configuración de emuladores.
+
+En conclusión, la elección entre estos enfoques depende de los requerimientos del proyecto: el desarrollo nativo con Compose optimiza el rendimiento y la integración profunda con el sistema operativo, mientras que Flutter prioriza la portabilidad y la unificación del ciclo de desarrollo multiplataforma.
