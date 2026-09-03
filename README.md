@@ -51,3 +51,13 @@ Durante el proceso de instalación surgieron dos complicaciones principales con 
 
 ### Emulador "Hello Android"
 <img width="1917" height="1137" alt="Captura de pantalla 2026-09-03 074542" src="https://github.com/user-attachments/assets/eb6ada34-0fc2-48cd-b36c-72be0c2c49b0" />
+| Herramienta | Versión Instalada | Sistema Operativo |
+| :--- | :--- | :--- |
+| **Sistema Operativo Base** | Windows 11 (25H2) | N/A |
+| **Java (JDK)** | Amazon Corretto 25.0.4.1 | Windows 11 |
+| **Maven** | Apache Maven 3.9.16 | Windows 11 |
+| **Git** | 2.55.0.windows.5 | Windows 11 |
+| **Flutter** | 3.47.2 (Channel stable) | Windows 11 |
+| **Android SDK** | 37.0.0 | Windows 11 |
+| **Node.js** | 24.20.0 | Windows 11 |
+| **Docker** | 29.7.2 | Windows 11 |
